@@ -1,6 +1,8 @@
 // Task 1 - a
 
-let currentYear = new Date().getFullYear;
+let date = new Date();
+let currentYear = date.getFullYear();
+
 let birthYear = +prompt("Enter your birth year: ");
 
 console.log(`You are ${currentYear - birthYear} years old.`);
@@ -56,7 +58,41 @@ if(!numberChoice < 0 || numberChoice > 9)
     }
 }
 
+
 // Task 2 - b
 
-let givenYear = +prompt("Enterthe year: ");
+let givenYear = +prompt("Enter the year: ");
 
+if ((givenYear % 4 == 0) && (givenYear % 100 != 0) || (givenYear % 400 == 0) ? console.log(`${givenYear} is a leap year!`) : console.log(`${givenYear} is not a leap year!`));
+
+
+// Task 2 - c
+
+let setDay = +prompt("Enter the day: ");
+let setMonth = +prompt("Enter the month: ");
+let setYear = +prompt("Enter the year: ");
+
+let newDay, newMonth, newYear;
+
+if((setDay >= 1 && setDay <= 31) && (setMonth >= 1 && setMonth <= 12) && (setYear != 0))
+{
+    if(setMonth == 4 || setMonth == 6 || setMonth == 9 || setMonth == 11)
+    {
+        if (setDay == 30)
+        {
+            newDay = 1;
+            newMonth = setMonth + 1;
+            newYear = setYear;
+        }
+        else
+        {
+            newDay  = setDay + 1;
+            newMonth = setMonth;
+            newYear = setYear;
+        }
+    }
+    else if (setMonth == 2)
+    {
+        if ()
+    }
+}
