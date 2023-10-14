@@ -42,7 +42,7 @@ console.log("Sorted array: " + testArray);
 
 var startPoint = Math.ceil(testArray.length / 2);
 
-testArray.splice(startPoint, testArray.length - startIndex, ...Array(testArray.length - startPoint).fill(0));
+testArray.splice(startPoint, testArray.length - startPoint, ...Array(testArray.length - startPoint).fill(0));
 
 console.log("Replaced with zeros array: " + testArray);
 
@@ -61,7 +61,7 @@ for (let i = 0; i < testArray.length; i++)
 {
     for (let j = i + 1; j < testArray.length; j++)
     {
-        if (testArray[i] == array1[j])
+        if (testArray[i] == testArray[j])
         {
             counter++;
         }
@@ -82,7 +82,7 @@ var splitPoint = Math.ceil(testArray.length / 2);
 
 let secondTestArray = testArray.slice(0, startPoint);
 
-console.log("New array: " + newArray);
+console.log("New array: " + secondTestArray);
 
 
 // Task 9
