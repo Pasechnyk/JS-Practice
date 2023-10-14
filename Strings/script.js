@@ -61,7 +61,7 @@ let car = {
     {
         console.log("Car info:" + this.model + "\n" + this.manufacturer + "\n" + this.averageSpeed + "km/h\n" + this.year + ".");
     },
-    calculateTravelTime : function (distance)
+    calculateTravelTime : function (distance, averageSpeed)
     {
         var totalTravelTime = distance / averageSpeed;
     
@@ -76,7 +76,7 @@ let car = {
 };
 
 car.showInfo();
-car.calculateTravelTime(400);
+car.calculateTravelTime(400, 100);
 
 
 // Task 3
@@ -110,14 +110,14 @@ function getNumberOfWords(myString)
     return numberOfWords;
 }
 
-console.log("Number of words in the string: " + getNumberOfWords (string));
+console.log("Number of words in the string: " + getNumberOfWords (myString));
 
 
 // Check if the word is palindrome
 
-function isPalindrome(string)
+function isPalindrome(myString)
 {
-    const cleanedStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+    const cleanedStr = myString.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
     return cleanedStr === cleanedStr.split('').reverse().join('');
 }
 
