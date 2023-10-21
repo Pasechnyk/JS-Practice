@@ -3,36 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Pagination Practice</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>JS Movie Search</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body> 
-    <h3 class="text-center m-4">Search (in the process):</h3>
-    <div class="d-flex align-items-center justify-content-center">
-        <div class="border rounded w-50 m-5 h-100">
-            <form>
-                <div class="form-group row">
-                    <label class="col-sm-2 col-form-label m-4">Title</label>
-                    <div class="col-sm-8 m-4">
-                      <input type="email" class="form-control" id="inputTitle">
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-sm-2 col-form-label m-4">Type</label>
-                    <div class="col-sm-8 m-4">
-                      <input class="form-control" id="inputType" placeholder="Movie">
-                    </div>
-                  </div>
-                  <button class="btn btn-secondary col-sm-11 m-4 border-dark rounded">Search</button>
-                </div>
-            </form>
-        </div>
+<body>
+    <div class="container">
+        <h1>Movie Search</h1>
+        <form id="movie-search-form">
+            <label for="movie-title">Movie Title:</label>
+            <input type="text" id="movie-title" placeholder="Enter movie title...">
+            <label for="release-year">Release Year:</label>
+            <input type="number" id="release-year" placeholder="Enter the release year...">
+            <label for="search-type">Search Type:</label>
+            <select id="search-type">
+                <option value="movie">Movie</option>
+                <option value="series">TV Series</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+        <div id="movie-results"></div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
-    
+    <script src="script.js"></script>
 </body>
+
+</html>
+
