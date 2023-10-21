@@ -1,6 +1,7 @@
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
+    text-align: center;
 }
 
 table {
@@ -25,5 +26,10 @@ input {
 }
 
 button {
+    color: white;
+    background-color: #878787;
+    font-size: small;
     margin-top: 15px;
+    margin: 15px;
+    scale: 1.3;
 }
