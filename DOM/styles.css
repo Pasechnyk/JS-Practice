@@ -1,0 +1,29 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #878787;
+    padding: 15px;
+    text-align: left;
+}
+
+form {
+    margin: 5px;
+    padding: 10px;
+}
+
+input {
+    margin: 10px;
+}
+
+button {
+    margin-top: 15px;
+}
