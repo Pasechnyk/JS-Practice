@@ -28,22 +28,22 @@ window.addEventListener('load', function() {
         else { alert('Fill in all information!'); }
     });
 
-    // Dynamic search
-    searchInput.addEventListener('input', function(){
-        const searchTerm = searchInput.value.toLowerCase();
-        const rows = productList.getElementsByTagName('tr');
+    // // Dynamic search
+    // searchInput.addEventListener('input', function(){
+    //     const searchTerm = searchInput.value.toLowerCase();
+    //     const rows = productList.getElementsByTagName('tr');
 
-        for (const row of rows) {
-            const productName = row.getElementsByTagName('td')[0];
-            if (productName) {
-                const nameText = productName.textContent.toLowerCase();
-                if (nameText.includes(searchTerm) || searchTerm === '') {
-                    row.style.display = '';
-                } 
-                else { row.style.display = 'none'; }
-            }
-        }
-    });
+    //     for (const row of rows) {
+    //         const productName = row.getElementsByTagName('td')[0];
+    //         if (productName) {
+    //             const nameText = productName.textContent.toLowerCase();
+    //             if (nameText.includes(searchTerm) || searchTerm === '') {
+    //                 row.style.display = '';
+    //             } 
+    //             else { row.style.display = 'none'; }
+    //         }
+    //     }
+    // });
 
     // Clear list from products
     console.log(clearButton);
