@@ -1,9 +1,9 @@
 //Task 1
 
 let clock = {
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
+    hours: 21,
+    minutes: 25,
+    seconds: 59,
 
     getTimeString: function() {
         var formattedHours = this.hours < 10 ? '0' + this.hours : this.hours;
@@ -40,14 +40,13 @@ let clock = {
         }
     },
     displayCurrentTime: function() {
-        document.write("Current Time: " + this.getTimeString() + ".");
+        console.log("Current Time: " + this.getTimeString() + ".");
     }
 };
 
-clock.hours = 21;
-clock.minutes = 25;
-clock.seconds = 59;
-clock.getTimeString();
+clock.displayCurrentTime();
 clock.addSecond();
+clock.displayCurrentTime();
 clock.removeSecond();
 clock.displayCurrentTime();
+
